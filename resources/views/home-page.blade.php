@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>DRYME - Free Laundry Service Website Template</title>
+    <title>Dii Clean</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -85,21 +85,21 @@
                 <div class="carousel-item active">
                     <img class="w-100" src="img/carousel-1.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
+                        {{-- <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase mb-md-3">Laundry & Dry Cleaning</h4>
                             <h1 class="display-3 text-white mb-md-4">Best For Laundry Services</h1>
                             <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Learn More</a>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img class="w-100" src="img/carousel-2.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
+                        {{-- <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase mb-md-3">Laundry & Dry Cleaning</h4>
                             <h1 class="display-3 text-white mb-md-4">Highly Professional Staff</h1>
                             <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Learn More</a>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -119,7 +119,7 @@
 
 
     <!-- Contact Info Start -->
-    <div class="container-fluid contact-info mt-5 mb-4">
+    {{-- <div class="container-fluid contact-info mt-5 mb-4">
         <div class="container" style="padding: 0 30px;">
             <div class="row">
                 <div class="col-md-4 d-flex align-items-center justify-content-center bg-secondary mb-4 mb-lg-0"
@@ -128,7 +128,7 @@
                         <i class="fa fa-2x fa-map-marker-alt text-white m-0 mr-3"></i>
                         <div class="d-flex flex-column">
                             <h5 class="text-white font-weight-medium">Lokasi Kami</h5>
-                            <p class="m-0 text-white">Jl Keadilan no.34 jakarta timur</p>
+                            <p class="m-0 text-white">Jl Keadilan no.34</p>
                         </div>
                     </div>
                 </div>
@@ -154,7 +154,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Contact Info End -->
 
 
@@ -169,7 +169,7 @@
                 <div class="col-10 p-3" style="background-color: #f1f1f1">
                     <table class="table table-bordered table-stripped" id="tableKu">
                         <thead>
-                            <tr style="background-color: #24256d; color: white;">
+                            <tr style="background-color: #24416d; color: white;">
                                 <th>No</th>
                                 <th>Kode Invoice</th>
                                 <th>Pelanggan</th>
@@ -237,7 +237,7 @@
                                     style="width: 100px; height: 100px;">
                                     <i class="fa fa-3x fa-cloud-sun text-secondary"></i>
                                 </div>
-                                <h4 class="font-weight-bold m-0">Dry Cleaning</h4>
+                                <h4 class="font-weight-bold m-0">Cuci Kering</h4>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 pb-1">
@@ -247,7 +247,7 @@
                                     style="width: 100px; height: 100px;">
                                     <i class="fas fa-3x fa-soap text-secondary"></i>
                                 </div>
-                                <h4 class="font-weight-bold m-0">Wash & Laundry</h4>
+                                <h4 class="font-weight-bold m-0">Cuci Basah</h4>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 pb-1">
@@ -257,7 +257,7 @@
                                     style="width: 100px; height: 100px;">
                                     <i class="fa fa-3x fa-burn text-secondary"></i>
                                 </div>
-                                <h4 class="font-weight-bold m-0">Curtain Laundry</h4>
+                                <h4 class="font-weight-bold m-0">Cuci Selimut</h4>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 pb-1">
@@ -267,7 +267,7 @@
                                     style="width: 100px; height: 100px;">
                                     <i class="fa fa-3x fa-tshirt text-secondary"></i>
                                 </div>
-                                <h4 class="font-weight-bold m-0">Suits Cleaning</h4>
+                                <h4 class="font-weight-bold m-0">Cuci Pakaian</h4>
                             </div>
                         </div>
                     </div>
@@ -285,10 +285,10 @@
                             <h1 class="mb-4">Mengapa Memilih Kami</h1>
                             <p>
                                 Tidak punya waktu mencuci sendiri? Mau laundry tapi takut baju hilang dan hasilnya
-                                berantakan? Tenang, EXO Laundry bisa bantu kamu ngelaundry sambil menikmati waktu
+                                berantakan? Tenang, Dii Clean bisa bantu kamu ngelaundry sambil menikmati waktu
                                 istirahatmu dirumah dengan mesin cuci kualitas di kelasnya. Semua jenis baju, tas, dan
                                 sepatu kesayanganmu, let us handle it! Dijamin hasilnya rapi, bersih, plus wangi. </p>
-                            <p>Nikmati layanan FREE EXO DELIVERY yang akan diantar jemput langsung oleh driver EXO.
+                            <p>Nikmati layanan FREE DIICLEAN DELIVERY yang akan diantar jemput langsung oleh driver DiiClean.
                                 Cukup “click” kontak WhatsApp yang tersedia, pakaian kembali dengan bersih, rapi, dan
                                 siap beraktivitas.</p>
                             {{-- <div class="row">

@@ -49,7 +49,7 @@
                             readonly>
                         </div>
 
-                        {{-- <div class="form-group">
+                         <div class="form-group">
                             <label for="outlet">Outlet</label>
                             <select class="form-select form-control @error('id_outlet') is-invalid @enderror"
                                 name="id_outlet" id="id_outlet" placeholder="Outlet" autocomplete="off"
@@ -60,7 +60,7 @@
                                     @error('outlet')
                                     <span class="text-danger">{{ $message }}</span>
                                     @enderror
-                        </div> --}}
+                        </div>
                         @endif
 
 
