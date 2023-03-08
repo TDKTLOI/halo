@@ -22,7 +22,7 @@
             <th>Outlet</th>
             <th>Jenis</th>
             <th>Harga</th>
-            <th>#</th>
+            <th>Aksi</th>
         </tr>
     </thead>
     <tbody>

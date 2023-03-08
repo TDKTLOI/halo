@@ -79,7 +79,7 @@ class TransaksiController extends Controller
             'id_user' => $user,
         ]);
 
-        return redirect('/dashboard/transaksi/bayar/'.$invoice)->with('message', 'User added successfully!');
+        return redirect('/dashboard/transaksi/bayar/'.$invoice)->with('message', 'Data Transaksi Berhasil diTambahkan!');
     }
 
     /**
@@ -139,7 +139,7 @@ class TransaksiController extends Controller
                     <label for="keterangan"
                         class="form-label">Deskripsi</label>
                     <textarea class="form-control" id="keterangan" name = "keterangan"
-                        rows="3"></textarea>
+                        rows="3" aria-label="Disabled input example" readonly>-</textarea>
                 </div>
                 
 
@@ -246,7 +246,7 @@ class TransaksiController extends Controller
         $data['tgl_bayar'] = $req->tgl_bayar;
 
         Transaksi::where('id',$id)->update($data);
-        return redirect()->route('transaksi.index')->with('message', 'Data Transaksi updated successfully!');
+        return redirect()->route('transaksi.index')->with('message', 'Data Transaksi berhasil di Perbarui!');
 
     }
 
@@ -262,6 +262,6 @@ class TransaksiController extends Controller
         $id->delete();
 
 
-        return redirect()->back()->with('message', 'Transaksiphp  deleted successfully!');
+        return redirect()->back()->with('message', 'Data Transaksi berhasil di Hapus!');
     }
 }

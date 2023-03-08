@@ -6,7 +6,7 @@
 
 <!-- Main Content goes here -->
 
-<a href="{{ route('basic.create') }}" class="btn btn-primary mb-3" style="background-color: #b12f2f; color: white;">New User</a>
+<a href="{{ route('basic.create') }}" class="btn btn-primary mb-3" style="background-color: #b12f2f; color: white;">Membuat Pengguna Baru</a>
 
 @if (session('message'))
 <div class="alert alert-success">
@@ -20,9 +20,9 @@
             <th>No</th>
             <th>Full Name</th>
             <th>Email</th>
-            <th>Outlet</th>
+            {{-- <th>Outlet</th> --}}
             <th>Roles</th>
-            <th>#</th>
+            <th>Aksi</th>
         </tr>
     </thead>
     <tbody>
@@ -31,9 +31,9 @@
             <td scope="row">{{ $loop->iteration }}</td>
             <td>{{ $user->full_name }}</td>
             <td>{{ $user->email }}</td>
-            <td>
-                {{ $user->outlet->nama }}
-            </td>
+            {{-- <td> --}}
+                {{-- {{ $user->outlet->nama }} --}}
+            {{-- </td> --}}
             <td>{{ $user->role }}</td>
             <td>
                 <div class="d-flex">

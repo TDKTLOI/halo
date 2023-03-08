@@ -37,7 +37,7 @@ class PaketController extends Controller
         $paket = Paket::with('outlet')->get();
 
         return view('paket.create', [
-            'title' => 'New Paket',
+            'title' => 'Membuat Paket Baru',
             'paket' => $paket,
             'outlet' => $outlet
         ]);
@@ -58,7 +58,14 @@ class PaketController extends Controller
             'harga' => $request->harga,
         ]);
 
-        return redirect()->route('paket.index')->with('message', 'Outlet added successfully!');
+        // $validate = $request->validate([
+        //     'id_outlet' => ['required'],
+        //     'jenis' => ['required'],
+        //     'nama_paket' => ['required'],
+        //     'harga' => ['required|numeric']
+        // ]);
+
+        return redirect()->route('paket.index')->with('message', 'Berhasil Menambahkan Paket!');
     }
 
     /**
@@ -84,7 +91,7 @@ class PaketController extends Controller
         $outlet = Outlet::all();
 
          return view('paket.edit', [
-            'title' => 'Edit Membership',
+            'title' => 'Mengubah Data Paket',
             'paket' => $paket,
             'outlet' => $outlet
         ]);
@@ -104,7 +111,7 @@ class PaketController extends Controller
         $paket = Paket::find($id);
         $paket->update($data);
 
-        return redirect()->route('paket.index')->with('message', 'outlet updated successfully!');
+        return redirect()->route('paket.index')->with('message', 'Berhasil Memperbarui Paket!');
     }
 
     /**
@@ -119,6 +126,6 @@ class PaketController extends Controller
         $id->delete();
 
 
-        return redirect()->route('paket.index')->with('message', 'Outlet deleted successfully!');
+        return redirect()->route('paket.index')->with('message', 'Berhasil Menghapus Paket!');
     }
 }

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Outlet;
 use Illuminate\Http\Request;
+use Validator;
 
 class OutletController extends Controller
 {
@@ -31,7 +32,7 @@ class OutletController extends Controller
     public function create()
     {
         return view('outlet.create', [
-            'title' => 'New Outlet',
+            'title' => 'Membuat Outlet Baru',
         ]);
     }
 
@@ -43,13 +44,16 @@ class OutletController extends Controller
      */
     public function store(Request $request)
     {
+
         Outlet::create([
             'nama' => $request->nama,
             'alamat' => $request->alamat,
             'no_telp' => $request->no_telp,
         ]);
 
-        return redirect()->route('outlet.index')->with('message', 'Outlet added successfully!');
+        Outlet::create($request->all());
+
+        return redirect()->route('outlet.index')->with('message', 'Berhasil Menambahkan Outlet!');
     }
 
     /**
@@ -72,7 +76,7 @@ class OutletController extends Controller
     public function edit(Outlet $outlet)
     {
         return view('outlet.edit', [
-            'title' => 'Edit Outlet',
+            'title' => 'Mengubah Data Outlet',
             'outlet' => $outlet
         ]);
     }
@@ -91,7 +95,7 @@ class OutletController extends Controller
         $outlet = Outlet::find($id);
         $outlet->update($data);
 
-        return redirect()->route('outlet.index')->with('message', 'outlet updated successfully!');
+        return redirect()->route('outlet.index')->with('message', 'Berhasil Memperbarui Outlet!');
     }
 
     /**
@@ -106,6 +110,6 @@ class OutletController extends Controller
         $id->delete();
 
 
-        return redirect()->route('outlet.index')->with('message', 'Outlet deleted successfully!');
+        return redirect()->route('outlet.index')->with('message', 'Berhasil Menghapus Outlet!');
     }
 }

@@ -21,7 +21,7 @@
             <th>Nama</th>
             <th>Alamat</th>
             <th>No Telp</th>
-            <th>#</th>
+            <th>Aksi</th>
         </tr>
     </thead>
     <tbody>

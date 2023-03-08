@@ -26,7 +26,7 @@ class BasicController extends Controller
         return view('basic.list', [
             'title' => 'Data Pengguna',
             'users' => $users,
-            'outlet' => $outlet
+            // 'outlet' => $outlet
         ]);
     }
 
@@ -41,9 +41,9 @@ class BasicController extends Controller
         $users = User::with('outlet')->get();
 
         return view('basic.create', [
-            'title' => 'New User',
+            'title' => 'Membuat Pengguna Baru',
             'users' => $users,
-            'outlet' => $outlet
+            // 'outlet' => $outlet
         ]);
     }
 
@@ -59,12 +59,12 @@ class BasicController extends Controller
             'name' => $request->name,
             'last_name' => $request->last_name,
             'email' => $request->email,
-            'id_outlet' => $request->id_outlet,
+            // 'id_outlet' => $request->id_outlet,
             'role' => $request->role,
             'password' => Hash::make($request->password)
         ]);
 
-        return redirect()->route('basic.index')->with('message', 'User added successfully!');
+        return redirect()->route('basic.index')->with('message', 'Berhasil Menambahkan User!');
     }
 
     /**
@@ -91,8 +91,8 @@ class BasicController extends Controller
         $user = User::find($id);
  
         return view('basic.edit', [
-            'title' => 'Edit User',
-            'outlet' => $outlet,
+            'title' => 'Edit Pengguna',
+            // 'outlet' => $outlet,
             'user' => $user,
             
         ]);
@@ -114,11 +114,11 @@ class BasicController extends Controller
         $basic->name = $request->name;
         $basic->last_name = $request->last_name;
         $basic->role = $request->role;
-        $basic->id_outlet = $request->id_outlet;
+        // $basic->id_outlet = $request->id_outlet;
         $basic->email = $request->email;
         $basic->save();
 
-        return redirect()->route('basic.index')->with('message', 'User updated successfully!');
+        return redirect()->route('basic.index')->with('message', 'Berhasil Memperbarui User!');
     }
 
     /**
@@ -130,11 +130,11 @@ class BasicController extends Controller
     public function destroy(User $basic)
     {
         if (Auth::id() == $basic->getKey()) {
-            return redirect()->route('basic.index')->with('warning', 'Can not delete yourself!');
+            return redirect()->route('basic.index')->with('warning', 'Tidak Bisa Menghapus dirimu!');
         }
 
         $basic->delete();
 
-        return redirect()->route('basic.index')->with('message', 'User deleted successfully!');
+        return redirect()->route('basic.index')->with('message', 'Berhasil Menghapus User!');
     }
 }

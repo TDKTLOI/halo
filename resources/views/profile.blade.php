@@ -60,13 +60,13 @@
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group focused">
-                                        <label class="form-control-label" for="name">Name<span class="small text-danger">*</span></label>
+                                        <label class="form-control-label" for="name">Nama<span class="small text-danger">*</span></label>
                                         <input type="text" id="name" class="form-control" name="name" placeholder="Name" value="{{ old('name', Auth::user()->name) }}">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group focused">
-                                        <label class="form-control-label" for="last_name">Last name</label>
+                                        <label class="form-control-label" for="last_name">Nama Belakang</label>
                                         <input type="text" id="last_name" class="form-control" name="last_name" placeholder="Last name" value="{{ old('last_name', Auth::user()->last_name) }}">
                                     </div>
                                 </div>
@@ -84,19 +84,19 @@
                             <div class="row">
                                 <div class="col-lg-4">
                                     <div class="form-group focused">
-                                        <label class="form-control-label" for="current_password">Current password</label>
+                                        <label class="form-control-label" for="current_password">Password Sekarang</label>
                                         <input type="password" id="current_password" class="form-control" name="current_password" placeholder="Current password">
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-group focused">
-                                        <label class="form-control-label" for="new_password">New password</label>
+                                        <label class="form-control-label" for="new_password">Password Baru</label>
                                         <input type="password" id="new_password" class="form-control" name="new_password" placeholder="New password">
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-group focused">
-                                        <label class="form-control-label" for="confirm_password">Confirm password</label>
+                                        <label class="form-control-label" for="confirm_password">Ulangi Password Baru</label>
                                         <input type="password" id="confirm_password" class="form-control" name="password_confirmation" placeholder="Confirm password">
                                     </div>
                                 </div>
@@ -107,7 +107,7 @@
                         <div class="pl-lg-4">
                             <div class="row">
                                 <div class="col text-center">
-                                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                                    <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
                                 </div>
                             </div>
                         </div>

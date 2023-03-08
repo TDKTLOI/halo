@@ -33,11 +33,11 @@ class DatabaseSeeder extends Seeder
         User::create([
             'name' => 'Super',
             'last_name' => 'Administrator',
-            'email' => 'adminsatu@mail.com',
+            'email' => 'admin@mail.com',
             'role' => 'admin',
             'id_outlet' => '1',
             'email_verified_at' => now(),
-            'password' => Hash::make('kentung123'), // password
+            'password' => Hash::make('12345678'), // password
         ]);
     }
 }

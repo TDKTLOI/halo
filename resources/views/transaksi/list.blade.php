@@ -24,7 +24,7 @@
             <th>Total Harga</th>
             <th>Status</th>
             <th>Dibayar</th>
-            <th>#</th>
+            <th>Aksi</th>
         </tr>
     </thead>
     <tbody>
