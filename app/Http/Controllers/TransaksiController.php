@@ -79,7 +79,7 @@ class TransaksiController extends Controller
             'id_user' => $user,
         ]);
 
-        return redirect('/dashboard/transaksi/bayar/'.$invoice)->with('message', 'Data Transaksi Berhasil diTambahkan!');
+        return redirect('/dashboard/transaksi/bayar/'.$invoice)->with('message', 'User added successfully!');
     }
 
     /**
@@ -90,14 +90,14 @@ class TransaksiController extends Controller
      */
     public function show($kode)
     {
-        // $transaksi = Transaksi::where('kode_invoice', $kode)->first();
-        // $paket = Paket::where('id_outlet', $transaksi->id_outlet)->get();
+        $transaksi = Transaksi::where('kode_invoice', $kode)->first();
+        $paket = Paket::where('id_outlet', $transaksi->id_outlet)->get();
 
-        // return view('transaksi.pilih-paket', [
-        //     'transaksi' => $transaksi,
-        //     'paket' => $paket
+        return view('transaksi.pilih-paket', [
+            'transaksi' => $transaksi,
+            'paket' => $paket
 
-        // ]);
+        ]);
     }
 
     public function show_detail($kode_invoice)
@@ -139,7 +139,7 @@ class TransaksiController extends Controller
                     <label for="keterangan"
                         class="form-label">Deskripsi</label>
                     <textarea class="form-control" id="keterangan" name = "keterangan"
-                        rows="3" aria-label="Disabled input example" readonly>-</textarea>
+                        rows="3"></textarea>
                 </div>
                 
 
@@ -246,7 +246,7 @@ class TransaksiController extends Controller
         $data['tgl_bayar'] = $req->tgl_bayar;
 
         Transaksi::where('id',$id)->update($data);
-        return redirect()->route('transaksi.index')->with('message', 'Data Transaksi berhasil di Perbarui!');
+        return redirect()->route('transaksi.index')->with('message', 'Data Transaksi Berhasil Di Update!');
 
     }
 
@@ -262,6 +262,6 @@ class TransaksiController extends Controller
         $id->delete();
 
 
-        return redirect()->back()->with('message', 'Data Transaksi berhasil di Hapus!');
+        return redirect()->back()->with('message', 'Data Transaksi Berhasil Dihapus');
     }
 }

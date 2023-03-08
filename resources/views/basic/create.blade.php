@@ -75,7 +75,7 @@
             </div>
 
             <button type="submit" class="btn btn-primary">Simpan</button>
-            <a href="{{ route('basic.index') }}" class="btn btn-default">Kembali</a>
+            <a href="{{ route('basic.index') }}" class="btn btn-danger">Kembali</a>
 
         </form>
     </div>

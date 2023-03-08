@@ -37,7 +37,7 @@
                                     <label for="batas_waktu">Batas Waktu</label>
                                     <input type="datetime-local" style=" border-bottom: 2px solid black;"
                                         class="form-control @error('batas_waktu') is-invalid @enderror"
-                                        name="batas_waktu" id="batas_waktu" placeholder="nama paket" autocomplete="off"
+                                        name="batas_waktu" id="batas_waktu" placeholder="Batas Waktu" autocomplete="off"
                                         value="{{ old('batas_waktu') }}">
                                     @error('batas_waktu')
                                     <span class="text-danger">{{ $message }}</span>
@@ -49,7 +49,7 @@
                                     <label for="biaya_tambahan">Biaya Tambahan</label>
                                     <input type="number" style=" border-bottom: 2px solid black;"
                                         class="form-control @error('biaya_tambahan') is-invalid @enderror"
-                                        name="biaya_tambahan" id="biaya_tambahan" placeholder="nama paket"
+                                        name="biaya_tambahan" id="biaya_tambahan" placeholder="Biaya Tambahan"
                                         autocomplete="off" value="{{ old('biaya_tambahan') }}">
                                     @error('biaya_tambahan')
                                     <span class="text-danger">{{ $message }}</span>
@@ -61,7 +61,7 @@
                                     <label for="pajak">Pajak</label>
                                     <input type="number" style=" border-bottom: 2px solid black;"
                                         class="form-control @error('pajak') is-invalid @enderror" name="pajak"
-                                        id="pajak" placeholder="nama paket" autocomplete="off"
+                                        id="pajak" placeholder="Pajak" autocomplete="off"
                                         value="{{ old('pajak') }}">
                                     @error('pajak')
                                     <span class="text-danger">{{ $message }}</span>
@@ -73,7 +73,7 @@
                                     <label for="diskon">Diskon</label>
                                     <input type="number" style=" border-bottom: 2px solid black;"
                                         class="form-control @error('diskon') is-invalid @enderror" name="diskon"
-                                        id="diskon" placeholder="nama paket" autocomplete="off"
+                                        id="diskon" placeholder="Diskon" autocomplete="off"
                                         value="{{ old('diskon') }}">
                                     @error('diskon')
                                     <span class="text-danger">{{ $message }}</span>
@@ -105,7 +105,7 @@
                                             <th>Paket</th>
                                             <th>Jumlah Barang</th>
                                             <th>Harga</th>
-                                            <th>#</th>
+                                            <th>Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody>
